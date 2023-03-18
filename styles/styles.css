@@ -10,6 +10,46 @@ body{
   margin:0;
   overflow-x: hidden;
 }
+.header{
+  border:1px solid black;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-right: 8px;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #D1D1C9;
+}
+
+.logo{
+  display: flex;
+  height: 75px;
+  align-items: start;
+}
+.logo img{
+  height: 75px;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  gap:40px;
+}
+
+.header-button-img{
+  height: 50px;
+  display: flex;
+  align-items: end;
+  background-color: #D1D1C9;
+}
+
 .demo-button,
 .font{
   font-family: 'Abril Fatface', 'Roboto Slab', Arial;
@@ -36,3 +76,185 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
+
+.main-container-interests,
+.main-container{
+  margin-top: 60px;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+
+}
+.demo-container
+.sub-container{
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  
+}
+.sub-container-interests{
+  flex-basis: 50%;
+}
+
+.my-picture{
+  height: 700px;
+  margin-top: 50px;
+  border: 2px solid #171813;
+}
+
+
+
+.my-interests-container{
+  flex-basis: calc(100% / 2);
+}
+
+
+
+.demo-button,
+.my-interests-title,
+.about-me-title{
+  font-family: 'Abril Fatface', 'Roboto Slab', Arial;
+  font-size: 90px;
+  text-decoration: underline;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: bottom center;
+}
+.demo-text,
+.my-interests-text,
+.about-me-text{
+  
+  font-family: 'Roboto', Arial;
+  font-size: 24px;
+  transition: transform 0.5s ease-in-out;
+  width: 400px;
+  transform-origin: top center;
+  color: #171813;
+}
+.demo-container:hover .demo-text,
+.my-interests-container:hover .my-interests-text,
+.about-me-container:hover .about-me-text {
+  transform: scale(1.2);
+
+}
+.demo-container:hover .demo-button,
+.my-interests-container:hover .my-interests-title,
+.about-me-container:hover .about-me-title{
+  transform: scale(1.2);
+}
+
+.ai-img{
+  height: 400px;
+  margin-top: 100px;
+  margin-left: 80px;
+  border: 2px solid #171813;
+}
+.drawing-img{
+  height: 500px;
+  margin-top: 100px;
+  border: 2px solid #171813;
+}
+.event-img{
+  height: 400px;
+  margin-top: 100px;
+  border: 2px solid #171813;
+}
+.demo-text{display: flex;}
+.dismf{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  width: 80vw;
+
+}
+
+.demo-container,
+.my-interests-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+@media (max-width: 800px){
+  .logo img{
+    content: url('/images/k.webp');
+    height: 50px;
+    margin:auto;
+  }
+  .my-picture{
+    height: 300px;
+  }
+
+
+  .my-interests-container,
+  .main-container-interests,
+  .demo-container,
+  .about-me-container,
+  .main-container{
+    
+    width: 80vw;
+    max-width: 100%;
+    display: flex;
+    margin: 60px auto 80px auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .demo-button,
+  .my-interests-title,
+  .about-me-title{
+    font-size: 50px;
+    text-align: center;
+  }
+  .demo-text,
+  .my-interests-text,
+  .about-me-text{
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+
+  }
+
+  .item1{
+    order: 1;
+  }
+  .item2{
+    order: 2;
+  }
+  .item3{
+    order: 4;
+  }
+  .item4{
+    order: 3;
+  }
+  .item5{
+    order: 5;
+  }
+  .item6{
+    order: 6;
+  }
+
+  .drawing-img{
+    height: 90vw;
+    margin-top: 50px;
+  }
+  .ai-img{
+    height:60vw;
+    margin: 0;
+  }
+  .event-img{
+    height: 60vw;
+    position: relative;
+    top:-20vw;
+  }
+  #stars{
+    width: 100vw;
+  }
+}

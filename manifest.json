@@ -3,13 +3,13 @@
   "short_name": "My App",
   "icons": [
     {
-      "src": "images/k.ico",
-      "sizes": "32x32",
-      "type": "image/ico"
+      "src": "images/k.png",
+      "sizes": "144x144",
+      "type": "image/png"
     }
 
   ],
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "theme_color": "#171813",
   "background_color": "#D1D1C9"
