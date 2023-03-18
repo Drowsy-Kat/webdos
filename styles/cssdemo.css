@@ -1,0 +1,90 @@
+.navbar{
+  font-family: 'Prompt',sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color:rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:4px 0px;
+  border-bottom: 6px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: grey;
+  border-style: solid;
+}
+a{
+  color:black;
+  
+}
+
+.link-text{
+  border: 3px solid grey;
+  border-radius: 10px;
+  padding: .3em;
+  text-decoration:underline;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.link-text:hover{
+  background-color: gray;
+}
+
+#h2-css{
+  text-decoration: none;
+}
+
+.demo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.demo-subcontainer{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+
+
+.css-title{
+  font-family: 'Prompt',sans-serif;
+  color: #171813;
+  text-decoration: underline;
+}
+.list{
+  text-align: start;
+  display: inline-block;
+}
+a{
+  color:rgb(68, 68, 68)
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#img{
+  border-radius: 50%;
+  border: 2px solid blue;
+  transition: all 0.3s ease-in-out;
+  height:20vh;
+}
+ 
+#img:focus
+ {
+  animation: spin 1s forwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

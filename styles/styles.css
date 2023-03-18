@@ -1,0 +1,38 @@
+button{
+  border-width: 0px;
+  padding: 0;
+  cursor:pointer;
+}
+body{
+  padding: 2px 0px;
+  background-color: #D1D1C9;
+  color: #171813;
+  margin:0;
+  overflow-x: hidden;
+}
+.demo-button,
+.font{
+  font-family: 'Abril Fatface', 'Roboto Slab', Arial;
+  letter-spacing: 2px;
+  color: #171813;
+  text-decoration: underline;
+}
+
+.demo-button{
+  font-size: 75px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }

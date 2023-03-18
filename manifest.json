@@ -1,0 +1,16 @@
+{
+  "name": "My Web App",
+  "short_name": "My App",
+  "icons": [
+    {
+      "src": "images/k.ico",
+      "sizes": "32x32",
+      "type": "image/ico"
+    }
+
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#171813",
+  "background_color": "#D1D1C9"
+}
