@@ -170,4 +170,7 @@
     position: relative;
     top:-20vw;
   }
+  .stars{
+    width: 100vw;
+  }
 }
