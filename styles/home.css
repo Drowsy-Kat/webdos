@@ -1,22 +1,27 @@
 .main-container-interests,
 .main-container{
   margin-top: 60px;
-  display: grid;
+  display: flex;
   height: 100%;
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
   margin-bottom: 80px;
+  flex-wrap: wrap;
 
 }
 .demo-container
 .sub-container{
   position: relative;
-  height: 100%;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   
 }
+.sub-container-interests{
+  flex-basis: 50%;
+}
+
 .my-picture{
   height: 700px;
   margin-top: 50px;
@@ -25,7 +30,9 @@
 
 
 
-
+.my-interests-container{
+  flex-basis: calc(100% / 2);
+}
 
 
 
@@ -64,7 +71,7 @@
 #ai-img{
   height: 400px;
   margin-top: 100px;
-  margin-right: 80px;
+  margin-left: 80px;
   border: 2px solid #171813;
 }
 #drawing-img{
