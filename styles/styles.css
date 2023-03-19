@@ -27,7 +27,10 @@ body{
   z-index: 100;
   background-color: #D1D1C9;
 }
-
+#grid{
+  display: grid;
+  grid-template-columns: 20vw 20vw;
+}
 .logo{
   display: flex;
   height: 75px;
@@ -87,10 +90,10 @@ a:active { text-decoration: none; }
   flex-wrap: wrap;
 
 }
-.demo-container
+.demo-container,
 .sub-container{
   position: relative;
-  
+  flex-basis: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,7 +172,7 @@ a:active { text-decoration: none; }
   justify-content: center;
   align-items: center;
   display: inline-block;
-  width: 80vw;
+  width: 70vw;
 
 }
 
@@ -182,7 +185,7 @@ a:active { text-decoration: none; }
   flex-direction: column;
 }
 
-
+/*mobile*/
 @media (max-width: 800px){
   .logo img{
     content: url('/images/k.webp');
